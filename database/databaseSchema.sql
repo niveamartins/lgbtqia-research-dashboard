@@ -9,7 +9,7 @@ CREATE TABLE Questions (
     question TEXT(500) NOT NULL,
     category_id int NOT NULL,
     PRIMARY KEY (question_id),
-    FOREIGN KEY (category_id) REFERENCES Categories(category_id),
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)
 );
 
 CREATE TABLE Answers (
