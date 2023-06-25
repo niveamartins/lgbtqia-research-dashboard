@@ -1,0 +1,17 @@
+{
+  "name": "lgbt-research-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.18.0",
+    "fastify-autoload": "^3.13.0"
+  }
+}
