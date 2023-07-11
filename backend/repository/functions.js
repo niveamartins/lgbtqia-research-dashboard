@@ -1,10 +1,11 @@
-import connection from "./database.js";
+
 
 async function selectAllFrom(table) {
-    connection.query(`SELECT * FROM ${table}`, function (error, results, fields) {
-        if (error) throw error;
-        return results;
-      });
+    let results = await connection.query(
+            `SELECT * FROM ${table}`
+        )
+
+    return results
 }
 
 async function filterAllAnsQuestion(filters) {
@@ -73,11 +74,9 @@ async function filterAllAnsQuestion(filters) {
     }
 
     query += ';'
-    console.log(query)
     connection.query(query, 
         function (error, results, fields) {
         if (error) throw error;
-        console.log(results[0])
         return results;
       });
 }
